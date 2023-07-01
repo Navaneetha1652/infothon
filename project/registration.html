@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+    font-family: "Raleway", sans-serif;
+    background-color: rgb(245, 239, 239);
+    }
+    h1 {
+    text-align: center;
+    margin: 20px auto;
+    color:rgb(0, 7, 10);
+    }
+    form {
+    width: 70%;
+    margin: auto;
+    color:rgb(16, 14, 17);
+    }
+    fieldset {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 0 5px #815656;
+    background-color: #cfc2ca;
+    }
+    label {
+    display: block;
+    margin-bottom: 5px;
+    }
+    input[type="text"],input[type="email"],select{
+    width: calc(100% - 20px);
+    height: 20px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    }
+    button {
+    width: 100%;
+    text-align: center;
+    margin: auto !important;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #eee;
+    }
+    </style>
+<title>Event Registration Form.</title>
+<div id="event-registration">
+<h1>EVENT  REGISTRATION</h1>
+<form id="event-registration-form" method="POST" action="datac.php">
+<fieldset>
+<h3>Personal Information</h3>
+<label for="first-name">First Name</label>
+<input type="text" id="first-name" name="firstNname" />
+<label for="last-name">Last Name</label>
+<input type="text" id="last-name" name="lastName" />
+<label for="email">Email</label>
+<input type="email" id="email" name="email" />
+<label for="adress">Address</label>
+<input type="text" id="address" name="address" />
+<label for="city">City</label>
+<input type="text" id="city" name="city" />
+<label for="state">State</label>
+<input type="text" id="state" name="state"/>
+<label for="Event Section">Event Selection</label>
+<input type="text" id="EventSelection" name="EventSelection"/>
+</fieldset>
+
+<button type="button" >submit form</button>
+
+</div>
+<body>
+<script type="text/javascript">
+var statesSelect = document.getElementById("states");
+var states = {
+A: "Andhra Pradesh",
+B: "Assam",
+C: "Arunachal Pradesh",
+D: "Bihar",
+E: "Chattisgarh",
+F: "Goa",
+G: "Gujarat",
+H: "Haryana",
+I: "Himachal Pradesh",
+J: "Jharkhand",
+K: "Karnataka",
+L: "Kerala",
+M: "Madhya Pradesh",
+N: "Maharashtra",
+O: "Manipur",
+P: "Meghalaya",
+Q: "Mizoram",
+R: "Nagaland",
+S: "Odisha",
+T: "Punjab",
+U: "Rajasthan",
+V: "Sikkim",
+W: "Tamil Nadu",
+X: "Telangana",
+Y: "Tripura",
+Z: "Uttar Pradesh",
+ZA: "Uttarakhand",
+ZB: "West Bengal"
+};
+for (var key in states) {
+console.log(key);
+if (states.hasOwnProperty(key)) {
+console.log(key);
+var option = document.createElement("option"); 
+var t = document.createTextNode(states[key]); 
+option.appendChild(t); 
+statesSelect.appendChild(option);
+}
+}
+var EventSelectionSelect = document.getElementById("EventSelection");
+var EventSelection = {
+A:"Conference",
+B:"Education Fair",
+c:"Open Day For Universities",
+D:"Carrear Fair",
+E:"Exhibition Fair",
+F:"Others"
+};
+for (var key in EventSelection) {
+    console.log(key);
+    if (EventSelection.hasOwnProperty(key)) {
+    console.log(key);
+    var option = document.createElement("option"); 
+    var t = document.createTextNode(EventSelection[key]); 
+    option.appendChild(t); 
+    EventSelectionSelect.appendChild(option);
+    }
+}
+</script>
+</head>
+</body>
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+
+margin: 0;
+
+padding: 0;
+
+box-sizing: border-box;
+
+font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+
+min-height: 100vh;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+background: #d3a4c9;
+
+}
+
+.wrapper{
+
+position: relative;
+max-width: 430px;
+
+width: 100%;
+
+background: #fff;
+
+padding: 34px;
+
+border-radius: 6px;
+
+box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+
+}
+
+.wrapper h2{
+
+position: relative;
+
+font-size: 22px;
+
+font-weight: 600;
+
+color: #333;
+
+}
+
+.wrapper h2::before{
+
+content: '';
+
+position: absolute;
+
+left: 0;
+
+bottom: 0;
+
+height: 3px;
+
+width: 28px;
+
+border-radius: 12px;
+
+background: #631a51;
+
+}
+
+.wrapper form{
+
+margin-top: 30px;
+
+}
+
+.wrapper form .input-box{
+
+height: 52px;
+
+margin: 18px 0;
+
+}
+
+form .input-box input{
+
+height: 100%;
+
+width: 100%;
+
+outline: none;
+
+padding: 0 15px;
+
+font-size: 17px;
+
+font-weight: 400;
+
+color: #333;
+
+border: 1.5px solid #C7BEBE;
+
+border-bottom-width: 2.5px;
+
+border-radius: 6px;
+
+transition: all 0.3s ease;
+
+}
+
+.input-box input:focus,
+
+.input-box input:valid{
+
+border-color: #643d64;
+
+}
+
+form .policy{
+
+display: flex;
+
+align-items: center;
+
+}
+
+form h3{
+
+color: #707070;
+
+font-size: 14px;
+
+font-weight: 500;
+
+margin-left: 10px;
+
+}
+
+.input-box.button input{
+
+color: #ece6eb;
+
+letter-spacing: 1px;
+
+border: none;
+
+background: #745572;
+
+cursor: pointer;
+
+}
+
+.input-box.button input:hover{
+
+background: #8f6891;
+
+}
+
+form .text h3{
+
+color: #333;
+
+width: 100%;
+
+text-align: center;
+
+}
+
+form .text h3 a{
+
+color: #4070f4;
+
+text-decoration: none;
+
+}
+
+form .text h3 a:hover{
+
+text-decoration: underline;
+
+}
+        /* Styling the body */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        /* Styling section, giving background
+            image and dimensions */
+        section {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+        }
+        /* Styling the left floating section */
+        section .leftBox {
+            width: 50%;
+            height: 100%;
+            float: left;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        /* Styling the background of
+            left floating section */
+        section .leftBox .content {
+            color: #2c0520;
+            background: rgba(177, 107, 167, 0.5);
+            padding: 40px;
+            transition: .5s;
+        }
+        /* Styling the hover effect 
+            of left floating section */
+        section .leftBox .content:hover {
+            background: #be64af;
+        }
+        /* Styling the header of left
+            floating section */
+        section .leftBox .content h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        /* Styling the paragraph of
+            left floating section */
+        section .leftBox .content p {
+            margin: 10px 0 0;
+            padding: 0;
+        }
+        /* Styling the three events section */
+        section .events {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            background: rgba(134, 23, 129, 0.5);
+            float: right;
+            box-sizing: border-box;
+        }
+        /* Styling the links of
+        the events section */
+        section .events ul {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        /* Styling the lists of the event section */
+        section .events ul li {
+            list-style: none;
+            background: #f055d6;
+            box-sizing: border-box;
+            height: 200px;
+            margin: 15px 0;
+        }
+        /* Styling the time class of events section */
+        section .events ul li .time {
+            position: relative;
+            padding: 20px;
+            background: #bb749b;
+            box-sizing: border-box;
+            width: 30%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            transition: .5s;
+        }
+        /* Styling the hover effect
+            of events section */
+        section .events ul li:hover .time {
+            background: #47212e;
+        }
+        /* Styling the header of time
+            class of events section */
+        section .events ul li .time h2 {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #f8efef;
+            font-size: 5px;
+            line-height: 20px;
+        }
+        /* Styling the texts of time
+        class of events section */
+        section .events ul li .time h2 span {
+            font-size: 20px;
+        }
+ 
+        /* Styling the details
+        class of events section */
+        section .events ul li .details {
+            padding: 20px;
+            background: #7a426a;
+            box-sizing: border-box;
+            width: 70%;
+            height: 100%;
+            float: left;
+        }
+        /* Styling the header of the
+        details class of events section */
+        section .events ul li .details h3 {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+        }
+        /* Styling the lists of details
+        class of events section */
+        section .events ul li .details p {
+            position: relative;
+            margin: 10px 0 0;
+            padding: 0;
+            font-size: 12px;
+        }
+        /* Styling the links of details
+        class of events section */
+        section .events ul li .details a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1.5px solid #9b66cc;
+            margin-top: 8px;
+            font-size: 2px;
+            transition: .5s;
+        }
+        /* Styling the details class's hover effect */
+        section .events ul li .details a:hover {
+            background: #9b4a8d;
+            color: #772573;
+            border-color: #7c2b46;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="leftBox">
+            <div class="content">
+                <h1>
+                    Are you interested in hosting an event?
+                </h1>
+                <p>
+                    Tech bird provides you an open platform to host various events.
+                    It provides an assurance of smooth and succesful event registration.
+                    why waiting?
+                    Login to the host an event and get in touch with tech birds community.
+                  
+                </p>
+            </div>
+        </div>
+        <div class="events">
+            <ul>
+                <li>
+                    <div class="time">
+                        <h2>
+                            1.<br><span>Easy</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                    
+                        <p>
+                            Brand awareness:Hosting an event provides an opportunity to get people talking about your business.By implementing creative communication to produce social media buzz about the event in the days leading up to it, you can bring your business in front of many people.
+                        </p>
+                    
+                    </div>
+                    <div style="clear: both;"></div>
+                </li>
+                <li>
+                    <div class="time">
+                        <h2>
+                            2.<br><span>Efficient</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        
+                        <p>
+                            Networking opportunity:Businesses thrive on networking.Moreover,one of the major reasons why people attend events is to interact with like-minded people.Hosting an event for your business can be a great way to bring your industry’s key players together.     
+                        </p>
+                        
+                    </div>
+                    <div style="clear:both;"></div>
+                </li>
+                <li>
+                    <div class="time">
+                        <h2>
+                            3.<br><span>Effortless</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <p>
+                            Belonging to a community has become very important for so many people, especially after the pandemic.
+ People are looking for places where they can feel like they truly belong. 
+Inviting your customers to an event goes a long way in showing them that they are an important part of the business.
+                            
+                           
+                        </p>
+                        
+                    </div>
+                    <div style="clear:both;"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="wrapper">
+
+        <h2>HOST EVENT</h2>
+        
+        <form action="#">
+        
+        <div class="input-box">
+        
+        <input type="text" placeholder="Enter your name" required>
+        
+        </div>
+        
+        <div class="input-box">
+        
+        <input type="text" placeholder="Enter your email" required>
+        
+        </div>
+        
+        <div class="input-box">
+        
+        <input type="Contact Number" placeholder="Enter your number" required>
+        
+        </div>
+        
+        <div class="input-box">
+        
+        <input type="Event" placeholder="Type of Event you would like to host" required>
+        
+        </div>
+        
+        <div class="policy">
+        
+        <input type="checkbox">
+        
+        <h3>I accept all terms & condition</h3>
+        
+        </div>
+        
+        <div class="input-box button">
+        
+        <input type="Submit" value="Submit Now">
+        
+        </div>
+        
+        <div class="text">
+        
+        <h3>Already have an account? <a href="#">Login now</a></h3>
+        
+        </div>
+        
+        </form>
+        
+        </div>
+        
+</body>
+</html>
+
